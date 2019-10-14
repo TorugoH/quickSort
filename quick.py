@@ -6,7 +6,7 @@ def particionar(lista,inicio,fim):
     while(esquerda<direita):
         if(lista[esquerda]<=pivo):
             esquerda=esquerda+1
-        if(lista[direita]>pivo):
+        while(lista[direita]>pivo):
             direita=direita-1
         if(esquerda<direita):
             aux=lista[esquerda]
